@@ -1,0 +1,363 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: .3s ease-in-out;
+}
+body {
+    font-family: sans-serif, 'Gill Sans', 'Gill Sans MT';
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+/*              start header            */
+/* header {
+    background-size: cover;
+    min-height: 800px;
+} */
+header {
+	position: relative;
+    width: 100%;
+    min-height: 800px;
+}
+
+header::before {
+	content: " ";
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../imgs/datacloudbigdata.original.jpg) fixed no-repeat;
+    background-size: cover;
+    filter: brightness(0.7);
+}
+
+header div {
+	position: relative;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    padding: 20px;
+    position: sticky;
+    top: 0px;
+}
+header nav .logo {
+    color: white;
+    margin-left: 10%;
+    font-size: 25px;
+}
+header nav a {
+    color: white;
+    margin: 0px 20px;
+}
+header nav a:not(:nth-of-type(6)):hover, a:focus {
+    color: rgb(6, 189, 189);
+}
+header nav a:nth-of-type(5) {
+    border: 1px solid white;
+    padding: 10px 15px;
+}
+header nav a:nth-of-type(5):hover {
+    background: white;
+    color: rgb(2, 209, 209);
+}
+header nav a:nth-of-type(6) {
+    background: rgb(6, 189, 189);
+    padding: 10px 15px;
+    margin: 0px;
+}
+header nav a:nth-of-type(6):hover {
+    background: white;
+    color: rgb(6, 189, 189);
+}
+/*         end nav    */
+header section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15%;
+    position: relative;
+}
+header section h1 {
+    color: white;
+    font-size: 30px;
+    margin: 40px;
+}
+header section .search input[type="search"]{
+    padding: 10px 150px 10px 15px;
+    outline: none;
+    background: none;
+    color: white;
+    border: 1px solid white;
+}
+header section .search ::placeholder, .search button, .popular p {
+    color: white;
+}
+
+header section .search button {
+    background: rgb(6, 189, 189);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+header section .search button:hover {
+    background: white;
+    color: rgb(6, 189, 189);
+}
+header section .popular {
+    display: flex;
+}
+header section .popular p {
+    margin: 40px;
+}
+/*            end header          */
+
+/*            start main (trusted)    */
+main .trusted {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    text-align: center;
+}
+main .trusted h2, .trusted h3, .logos {
+    margin: 40px 10px;
+}
+main .trusted h2 {
+    text-align: start;
+}
+main .trusted .logos .fab {
+    font-size: 70px;
+    margin: 10px 30px;
+}
+main .trusted .fa-google {
+    color: #4285F4;
+}
+main .trusted .fa-apple {
+   color: #A2AAAD;
+}
+main .trusted .fa-twitter {
+    color: #1DA1F2;
+}
+main .trusted .fa-linkedin {
+    color: #0e76a8 ;
+}
+main .trusted .services {
+    display: flex;
+}
+main .trusted .services div {
+    background-color: #EEE;
+    padding: 20px;
+    margin: 50px 10px;
+}
+main .trusted .services div:hover {
+    background: #4285F4;
+    color: white;
+}
+main .trusted .services .fa-server {
+    background: rgb(6, 189, 189);
+    color: white;
+    font-size: 40px;
+    margin: 50px 0 20px;
+    padding: 20px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+main .trusted .services h4 {
+    margin: 10px;
+}
+/*   end trusted */
+
+/*        strat cloud plans */
+section.container-plans {
+    padding: 10px 50px 10px 0px;
+}
+
+section .intro {
+    text-align: center;
+    padding: 40px;
+    color: white;
+    background: #14136c;
+    position: absolute;
+    min-height: 300px;
+    width: 100%;
+}
+section .intro h2 {
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+section .plans {
+    width: 70%; 
+    margin: 14% auto 20px;
+    display: flex; 
+    z-index: 4;
+    position: relative;
+}
+section .plans .plan {
+    background: white;
+    padding: 40px;
+    margin: 0px 20px;
+    text-align: center;
+    box-shadow: 0px 0px 9px -3px;
+}
+section .plans .plan h3 {
+    padding: 10px 10px 40px;
+}
+section .plans .plan .price {
+    background: teal;
+    padding: 20px;
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+section .plans .plan p.month {
+    margin-bottom: 30px;
+}
+section .plans .plan a {
+    margin: 40px;
+    padding: 13px;
+    border: 1px solid #eee;
+    background: teal;
+    display: block;
+    color: white;
+}
+section .plans .plan a:hover {
+    filter: brightness(.7);
+}
+section .plans .two .price {
+    background: #14136c;
+}
+
+section .plans .two a {
+    background: #14136c;
+    
+}
+
+/*        start features      */
+.features p.best {
+    text-align: center;
+    margin: 60px 0px 0px;
+    color: teal;
+    font-size: 14px;
+}
+.features h3 {
+    text-align: center;
+    font-size: 25px;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.features .details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    justify-items: center;
+
+}
+.features .details .parent {
+    box-shadow: 0px 0px 9px -5px;
+    display: flex;
+}
+.features .details div.content {
+    padding: 30px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.features .details .parent h4 {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.features .details .icon {
+    padding: 10px;
+    display: flex;
+    margin: auto;
+    font-size: 35px;
+    border-radius: 50%;
+    color: rebeccapurple;
+}
+
+/*      start Say About us */
+
+.say-about {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background: #eee;
+    padding: 50px;
+    margin: 50px 0px 0px;
+}
+.say-about p {
+    padding: 10px;
+    color: teal;
+}
+.say-about h3 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+.say-about .fas.fa-quote-right {
+    color: white;
+    background-color: #14136c;
+    padding: 20px;
+    border-radius: 50%;
+}
+.say-about .details q {
+    display: block;
+    width: 40%;
+    margin: 30px auto;
+}
+.say-about .details img {
+    width: 10%;
+    display: block;
+    margin: auto;
+}
+/*      End say about us */
+
+/*                 start footer           */
+footer {
+    background: teal;
+    color: white;
+}
+footer a {
+    color: white;
+}
+footer a:hover {
+    color: turquoise;
+}
+footer .all {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 100px;
+}
+footer .all h4 {
+    font-size: 22px;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+footer .all ul li {
+    margin: 10px 0px;
+}
+footer .all .about-us {
+    width: 90%;
+}
+
+footer .copyright::before {
+    content: "";
+    border-top: 1px solid white;
+    display: block;
+    padding-top: 25px;
+}
+footer .copyright {
+    text-align: center;
+    padding: 30px 10px;
+}
