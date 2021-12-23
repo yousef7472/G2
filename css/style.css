@@ -3,21 +3,16 @@
     margin: 0;
     padding: 0;
     transition: .3s ease-in-out;
+    text-decoration: none !important;
 }
 body {
     font-family: sans-serif, 'Gill Sans', 'Gill Sans MT';
-}
-a {
-    text-decoration: none;
 }
 ul {
     list-style-type: none;
 }
 /*              start header            */
-/* header {
-    background-size: cover;
-    min-height: 800px;
-} */
+
 header {
 	position: relative;
     width: 100%;
@@ -95,7 +90,7 @@ header section .search input[type="search"]{
     color: white;
     border: 1px solid white;
 }
-header section .search ::placeholder, .search button, .popular p {
+header section .search ::placeholder, .search button, .popular label {
     color: white;
 }
 
@@ -112,8 +107,14 @@ header section .search button:hover {
 header section .popular {
     display: flex;
 }
-header section .popular p {
-    margin: 40px;
+header section .popular label {
+    margin-top: 40px;
+}
+header section .popular input {
+    margin-top: 46px;
+}
+header section .popular input {
+    margin-left: 20px;
 }
 /*            end header          */
 
@@ -234,6 +235,16 @@ section .plans .plan a:hover {
 section .plans .two .price {
     background: #14136c;
 }
+section .plans .plan ul li {
+    display: flex;
+    margin: 20px 0px;
+    text-align: center;
+}
+section .plans .plan .fa-check {
+    display: flex;
+    justify-content: left;
+    padding-right: 10px;
+} 
 
 section .plans .two a {
     background: #14136c;
@@ -294,6 +305,7 @@ section .plans .two a {
     background: #eee;
     padding: 50px;
     margin: 50px 0px 0px;
+    min-height: 500px;
 }
 .say-about p {
     padding: 10px;
@@ -310,15 +322,22 @@ section .plans .two a {
     padding: 20px;
     border-radius: 50%;
 }
-.say-about .details q {
+.say-about q {
     display: block;
     width: 40%;
     margin: 30px auto;
+    color: black;
 }
-.say-about .details img {
-    width: 10%;
-    display: block;
-    margin: auto;
+.say-about h4 {
+    color: black;
+}
+.say-about button.bub {
+    
+    background: #14136c;
+    border-radius: 50%;
+    width: 3%;
+    width: 3px;
+    border: 5px solid #14136c;
 }
 /*      End say about us */
 
